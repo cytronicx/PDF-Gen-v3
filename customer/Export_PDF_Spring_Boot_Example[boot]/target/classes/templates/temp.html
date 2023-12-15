@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Renewal Invitation</title>
+    <style>
+        th, td {
+            text-align: left;
+            padding: 10px;
+            font-size: 13px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+    <img th:src="@{classpath:/static/images/hf.jpg}" alt="Description of Image" width="200" height="100">
+</img>
+    </div>
+
+    <div class="address">
+        	<p>25 May 2023<br></br>
+        	<br></br>
+            [[${name}]] <br></br> 
+            [[${address1}]] <br></br>
+            [[${address2}]]
+        </p>
+    </div>
+
+    <div class="content">
+        <p>Dear Policyholder,</p>  
+
+        <b>OUR INSURANCE COMPANY - RENEWAL INVITATION</b>
+        <br></br>
+        <b>POLICY NUMBER:</b> [[${policyNumber}]]<br></br>
+        <b> RENEWAL DATE:</b> [[${renewalDate}]]<br></br>
+        
+    </div>
+
+    <div>
+        <p>Thank you for insuring with us!<br></br></p>
+
+        <p>We wish to inform you that this policy is due for renewal.</p>
+
+        <p>The details of this policy are as follows:</p>
+
+        <div class="tab">
+            <table>
+                <tr>
+                    <th><u>NAME OF THE INSURED</u></th>
+                    <th><u>POLICY NO</u></th>
+                    <th><u>POLICY TYPE</u></th>
+                    <th><u>PERIOD OF INSURANCE</u></th>
+                    <th><u>PREMIUM</u></th>
+                </tr>
+                <tr>
+                    <td>[[${name}]]</td>
+                    <td>[[${policyNumber}]]</td>
+                    <td>[[${policyType}]]</td>
+                    <td>[[${policyPeriod}]]</td>
+                    <td>[[${premium}]]</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <p>To ensure continuity of the insurance coverage, please arrange for premium payment according to the plan selected within 60 days from the date of this letter. This policy will be terminated if we do not receive the premium payment within the stated time.</p>
+
+            <p>Acceptable payment methods are cheque made in favor of "OUR INSURANCE PVT LTD" and cash or NETS at any of our servicing branches. If you are paying by cheque, please include your name and policy number at the back of the cheque.</p>
+
+            <p>Upon receipt of the premium payment, we will mail the renewal endorsement and membership card to you within two weeks.</p>
+
+            <p>If you have any questions, please contact your insurance adviser. Alternatively, you can call our customer service office at 0000 0000 or email us at ourinsurance@mail.com. We would be most happy to help you.</p>
+
+            <p>This letter requires no signature.</p>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <img th:src="@{classpath:/static/images/hf.jpg}" alt="Description of Image" width="200" height="100">
+		</img>
+    </div>
+</body>
+</html>
